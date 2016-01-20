@@ -1,11 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" I would like to sell..."
+        android:id="@+id/textView2" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button" />
-</LinearLayout>
+        android:text="SUBMIT"
+        android:id="@+id/button"
+        android:layout_gravity="right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:text="For example: apt, food, rides, ..." />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" In exchange for..."
+        android:id="@+id/textView3"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Food"
+        android:id="@+id/radioButton"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Housing"
+        android:id="@+id/radioButton2"
+        android:layout_below="@+id/textView3"
+        android:layout_toRightOf="@+id/radioButton"
+        android:layout_toEndOf="@+id/radioButton" />
+
+    <RadioButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Transportation"
+        android:id="@+id/radioButton3"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Entertainment"
+        android:id="@+id/radioButton4"
+        android:layout_below="@+id/radioButton"
+        android:layout_toRightOf="@+id/radioButton"
+        android:layout_toEndOf="@+id/radioButton" />
+
+    <RadioButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Money"
+        android:id="@+id/radioButton5"
+        android:layout_below="@+id/radioButton3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Other"
+        android:id="@+id/radioButton6"
+        android:layout_below="@+id/radioButton3"
+        android:layout_toRightOf="@+id/radioButton5"
+        android:layout_toEndOf="@+id/radioButton5" />
+
+</RelativeLayout>
